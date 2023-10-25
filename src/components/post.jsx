@@ -1,11 +1,14 @@
-const name = ['etienne', 'yoonseo'];
+import classes from "./Post.module.css";
 
-function Post() {
-	const chosenName = Math.random() > 0.3 ? name[0] : name[1];
-	return <div>
-		<p>hey I made one component!</p>
-		<p>{chosenName}</p>
-	</div>
+function Post(props) {
+  return (
+    <>
+      <div className={classes.post}>
+        <p className={classes.author}>{props.user}</p>
+        <p className={classes.text}>{props.id}</p>
+      </div>
+    </>
+  );
 }
 
 export default Post;

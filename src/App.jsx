@@ -1,13 +1,11 @@
-import Post from './components/post'
+import PostsList from "./components/PostsList";
 
 function App() {
-  // return <h1>Hello World!</h1>;
-  return <main>
-      <Post />
-      <Post />
-      <Post />
-    </main> ;
-
+  return (
+    <main>
+      <PostsList />
+    </main>
+  );
 }
 
 export default App;
